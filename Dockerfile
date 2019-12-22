@@ -1,6 +1,7 @@
 FROM centos:6.9
 
-RUN yum install -y gcc-c++ cmake openssh-server rsync gdb
+RUN yum install -y gcc-c++ cmake openssh-server rsync centos-release-scl
+RUN yum install -y devtoolset-6-gdb
 
 RUN curl -L https://github.com/Kitware/CMake/releases/download/v3.15.5/cmake-3.15.5-Linux-x86_64.sh -o ./cmake3.sh
 RUN chmod +x ./cmake3.sh

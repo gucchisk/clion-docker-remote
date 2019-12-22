@@ -4,3 +4,4 @@
 - Full Remote Mode
 - Remote Server on Docker
     - sshd on Docker
+    - CentOS 6.9
